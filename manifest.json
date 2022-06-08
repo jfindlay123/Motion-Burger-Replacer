@@ -1,0 +1,17 @@
+{
+	"name": "Motion Burger Replacer",
+	"manifest_version": 3,
+	"version": "1.0",
+	"description": "Replaces all mentions of 'Big Mac' with 'Motion Burger'",
+	"author": "deku",
+	
+	"content_scripts":
+	[
+		{
+			"matches": ["*://*/*"],
+			"all_frames": true,
+			"js": ["content_script.js"],
+			"run_at": "document_end"
+		}
+	]
+}
